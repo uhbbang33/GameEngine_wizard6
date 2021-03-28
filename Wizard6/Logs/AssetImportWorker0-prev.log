@@ -2360,3 +2360,4 @@ Received Import Request.
 Start importing Assets/BrokenVector/UltimateDungeonPack/Models/Lights/Torch_Wall.fbx using Guid(fe2e85b4d6271d84797599c39656320c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266d56087b4098a502887db23bedf356') in 0.044199 seconds
   Import took 0.045858 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
