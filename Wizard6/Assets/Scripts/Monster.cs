@@ -48,9 +48,6 @@ public class Monster : MonoBehaviour
 
         if(health == 0)
         {
-            anim.SetBool("isWalk", false);
-            anim.SetBool("isAttack", false);
-
             nav.SetDestination(transform.position);
             Destroy(gameObject, 4);
 
