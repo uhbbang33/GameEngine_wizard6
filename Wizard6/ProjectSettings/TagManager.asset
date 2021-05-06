@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - Monster
+  - Potion
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     public int maxPotion;
 
     public float mouseSensitivity = 1;
-    public float speed = 10;
 
     private void Start()
     {   
