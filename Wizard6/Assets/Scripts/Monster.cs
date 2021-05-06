@@ -10,8 +10,11 @@ public class Monster : MonoBehaviour
     Rigidbody rigid;
     NavMeshAgent nav;
     Animator anim;
+    BoxCollider boxCol;
 
-    public LayerMask whatIsGround, whatIsPlayer;
+    public int Health;
+
+    public LayerMask whatIsPlayer;
 
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
@@ -23,6 +26,7 @@ public class Monster : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        boxCol = GetComponent<BoxCollider>();
     }
 
     void Update()
@@ -59,9 +63,10 @@ public class Monster : MonoBehaviour
 
     void AttackPlayer()
     {
-        nav.SetDestination(player.position);
+        nav.SetDestination(transform.position);
 
         transform.LookAt(player);
         anim.SetBool("isAttack", true);
     }
+
 }

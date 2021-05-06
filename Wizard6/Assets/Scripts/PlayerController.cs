@@ -9,10 +9,15 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
     public Rigidbody rb;
 
-    public float speed = 10;
+    public float speed;
+    public int health;
+    public int maxHealth;
+
+    public int potion;
+    public int maxPotion;
 
     private void Start()
-    {
+    {   
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -33,5 +38,35 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = (transform.forward * (keyboardY * speed)) + 
                       (transform.right * (keyboardX * speed));
+
+        if (potion > 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                --potion;
+                health += 50;
+            }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Potion")
+        {
+            if (potion < maxPotion)
+                ++potion;
+            Destroy(other.gameObject);
+        }
+    }
+
+    int num = 0;
+    void OnTriggerStay(Collider other)
+    {
+        ++num;
+        if (other.CompareTag("Monster"))
+        {
+            if (num % 50 == 1)
+                health -= 50;
+        }
     }
 }
