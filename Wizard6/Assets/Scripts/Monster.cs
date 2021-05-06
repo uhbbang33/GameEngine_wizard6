@@ -10,9 +10,8 @@ public class Monster : MonoBehaviour
     Rigidbody rigid;
     NavMeshAgent nav;
     Animator anim;
-    BoxCollider boxCol;
 
-    public int Health;
+    public int health;
 
     public LayerMask whatIsPlayer;
 
@@ -26,7 +25,6 @@ public class Monster : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        boxCol = GetComponent<BoxCollider>();
     }
 
     void Update()
@@ -46,6 +44,17 @@ public class Monster : MonoBehaviour
         {
             anim.SetBool("isWalk", false);
             nav.SetDestination(transform.position);
+        }
+
+        if(health == 0)
+        {
+            anim.SetBool("isWalk", false);
+            anim.SetBool("isAttack", false);
+
+            nav.SetDestination(transform.position);
+            Destroy(gameObject, 4);
+
+            anim.SetTrigger("doDie");
         }
     }
 
@@ -69,4 +78,18 @@ public class Monster : MonoBehaviour
         anim.SetBool("isAttack", true);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Bullet"))
+        {
+            health -= 50;
+            anim.SetBool("isGetHit", true);
+            Debug.Log("∏ÛΩ∫≈Õ HP: " + health);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        anim.SetBool("isGetHit", false);
+    }
 }
