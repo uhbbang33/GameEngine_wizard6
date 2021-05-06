@@ -24,6 +24,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Hand.cs" t="Include" />
           <e p="Monster.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
         </e>
