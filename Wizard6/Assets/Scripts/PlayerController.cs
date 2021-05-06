@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public int potion;
     public int maxPotion;
 
+    public float mouseSensitivity = 1;
+    public float speed = 10;
+
     private void Start()
     {   
         Cursor.visible = false;
@@ -25,8 +28,8 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         //camera rotation
-        var mouseX = Input.GetAxis("Mouse X");
-        var mouseY = Input.GetAxis("Mouse Y");
+        var mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        var mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
         transform.eulerAngles = transform.eulerAngles + new Vector3(0, mouseX, 0);
 
