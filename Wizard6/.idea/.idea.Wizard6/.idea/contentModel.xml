@@ -23,9 +23,18 @@
             </e>
           </e>
         </e>
+        <e p="Hovl Studio" t="Include">
+          <e p="Procedural fire" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="FireSphere.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Monster.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
+          <e p="Shoot.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
