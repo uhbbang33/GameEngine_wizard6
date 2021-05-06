@@ -1966,3 +1966,12 @@ Received Import Request.
 Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664451deef9a7306b20885a47e319ebc') in 0.015433 seconds
   Import took 0.018210 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 546.075652 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller
+  artifactKey: Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d714f5b3186f90f8d7209b1da80557') in 0.013221 seconds
+  Import took 0.016147 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
