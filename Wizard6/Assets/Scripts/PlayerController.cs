@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             {
                 --potion;
                 health += 50;
-                Debug.Log("ÇÃ·¹ÀÌ¾î HP: " + health);
+                Debug.Log("í”Œë ˆì´ì–´ HP: " + health);
             }
         }
     }
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
             {
                 ++potion;
                 Destroy(other.gameObject);
-                Debug.Log("Æ÷¼Ç °³¼ö" + potion);
+                Debug.Log("í¬ì…˜ ê°œìˆ˜" + potion);
             }
         }
     }
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
             if (num % 50 == 1)
             {
                 health -= 50;
-                Debug.Log("ÇÃ·¹ÀÌ¾î HP: "+health);
+                Debug.Log("í”Œë ˆì´ì–´ HP: "+health);
             }
         }
     }

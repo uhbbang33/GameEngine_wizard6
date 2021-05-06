@@ -84,7 +84,7 @@ public class Monster : MonoBehaviour
         {
             health -= 50;
             anim.SetBool("isGetHit", true);
-            Debug.Log("¸ó½ºÅÍ HP: " + health);
+            Debug.Log("ëª¬ìŠ¤í„° HP: " + health);
         }
     }
 
