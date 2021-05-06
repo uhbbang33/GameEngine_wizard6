@@ -43,21 +43,25 @@ public class PlayerController : MonoBehaviour
 
         if (potion > 0)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 --potion;
                 health += 50;
+                Debug.Log("플레이어 HP: " + health);
             }
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Potion")
+        if (other.tag == "Potion")
         {
             if (potion < maxPotion)
+            {
                 ++potion;
-            Destroy(other.gameObject);
+                Destroy(other.gameObject);
+                Debug.Log("포션 개수" + potion);
+            }
         }
     }
 
@@ -68,7 +72,10 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Monster"))
         {
             if (num % 50 == 1)
+            {
                 health -= 50;
+                Debug.Log("플레이어 HP: "+health);
+            }
         }
     }
 }

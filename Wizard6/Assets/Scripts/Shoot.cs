@@ -44,5 +44,6 @@ public class Shoot : MonoBehaviour
         var projectileObj = Instantiate(projectile, FirePos.position, Quaternion.identity) as GameObject;
         projectileObj.GetComponent<Rigidbody>().velocity =
             (destination - FirePos.position).normalized * projectileSpeed;
+        projectile.tag = "Bullet";
     }
 }
