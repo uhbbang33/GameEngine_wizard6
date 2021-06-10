@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Monster
   - Potion
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - UI
   - whatIsGround
   - whatIsPlayer
-  - 
-  - 
+  - Door
+  - Monster
   - 
   - 
   - 

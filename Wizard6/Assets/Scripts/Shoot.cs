@@ -10,7 +10,7 @@ public class Shoot : MonoBehaviour
     public Transform FirePos;
     public float projectileSpeed = 10;
     public float coolTime = 4;
-    
+
     private Vector3 destination;
     private float timeToFire;
 
@@ -27,6 +27,9 @@ public class Shoot : MonoBehaviour
     {
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
+
+        //LayerMask monsterLayerMask = 1 << LayerMask.NameToLayer("Monster");
+        //LayerMask doorLayerMask = 1 << LayerMask.NameToLayer("Door");
 
         if (Physics.Raycast(ray, out hit))
         {

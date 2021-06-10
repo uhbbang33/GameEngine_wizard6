@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'ko' Physical Memory: 32699 MB
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'ko' Physical Memory: 32699 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ D:/GameEngine_wizard6/Wizard6
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56674
+50606
 Successfully changed project path to: D:/GameEngine_wizard6/Wizard6
 D:/GameEngine_wizard6/Wizard6
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.73 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 33.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,22 +35,22 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002292 seconds.
+Registered in 0.002267 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 29.62 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.881 seconds
+- Completed reload, in  0.896 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001592 seconds.
+Registered in 0.001613 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
@@ -59,234 +59,301 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.704 seconds
+- Completed reload, in  0.708 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1422 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.8 MB.
+System memory in use after: 67.9 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 1855.
+Total: 1.735700 ms (FindLiveObjects: 0.187500 ms CreateObjectMapping: 0.038900 ms MarkObjects: 1.452500 ms  DeleteObjects: 0.055700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Monster.cs
+  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5501f71353487b2e142373f7cfd9794') in 0.024620 seconds
+  Import took 0.026922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.799234 seconds.
+  path: Assets/Scripts/Monster.cs
+  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3986e77982a5144d64992198e76d0cd6') in 0.001986 seconds
+  Import took 0.004159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030231 seconds.
+  path: Assets/Scripts/Monster.cs
+  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3986e77982a5144d64992198e76d0cd6') in 0.002200 seconds
+  Import took 0.004680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.324403 seconds.
+  path: Assets/Scripts/Monster.cs
+  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f6751e0b5750c085e79ef0a72343cf') in 0.002369 seconds
+  Import took 0.004608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026037 seconds.
+  path: Assets/Scripts/Monster.cs
+  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f6751e0b5750c085e79ef0a72343cf') in 0.002064 seconds
+  Import took 0.004294 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001992 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.676 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1415 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 67.6 MB.
 System memory in use after: 67.7 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 1854.
-Total: 1.748100 ms (FindLiveObjects: 0.176600 ms CreateObjectMapping: 0.040000 ms MarkObjects: 1.472000 ms  DeleteObjects: 0.058600 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1858.
+Total: 1.533100 ms (FindLiveObjects: 0.152200 ms CreateObjectMapping: 0.036700 ms MarkObjects: 1.328200 ms  DeleteObjects: 0.015200 ms)
 
 ========================================================================
 Received Import Request.
+  Time since last request: 56.740132 seconds.
   path: Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller
   artifactKey: Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52734670357b50deec231102a0fff9ac') in 0.027224 seconds
-  Import took 0.029544 seconds .
+Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170d06bb4e18dc4217007dd0851b23a0') in 0.020533 seconds
+  Import took 0.023381 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 70.023265 seconds.
-  path: Assets/Scripts/Monster.cs
-  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61295d3575d23a1114cfcc9f598ee960') in 0.009458 seconds
-  Import took 0.011687 seconds .
+  Time since last request: 19.825770 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Attack01_Slime_Anim.fbx
+  artifactKey: Guid(438236b1bb4dc03468cb3f2d12fa922c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Attack01_Slime_Anim.fbx using Guid(438236b1bb4dc03468cb3f2d12fa922c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd7b4c9defa18012694708aef9fd81d') in 0.117390 seconds
+  Import took 0.119766 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.015536 seconds.
-  path: Assets/Scripts/Monster.cs
-  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61295d3575d23a1114cfcc9f598ee960') in 0.002039 seconds
-  Import took 0.004085 seconds .
+  Time since last request: 0.000206 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/WalkLeft_Slime_Anim.fbx
+  artifactKey: Guid(89d2cadc7addca64c8849fb4c8d0928d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/WalkLeft_Slime_Anim.fbx using Guid(89d2cadc7addca64c8849fb4c8d0928d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b29257a64e7386b76a735ee576692a1') in 0.061633 seconds
+  Import took 0.063773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Walk_Slime_Anim.fbx
+  artifactKey: Guid(f5d4d1a7dadc5a84d910c492d947ca4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Walk_Slime_Anim.fbx using Guid(f5d4d1a7dadc5a84d910c492d947ca4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6010eb62ec450d099d9df00e7be1916d') in 0.071385 seconds
+  Import took 0.073601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx
+  artifactKey: Guid(21b5bb1519e484148aa30042c43904c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx using Guid(21b5bb1519e484148aa30042c43904c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7076ec431da90b58d75eb32353087b') in 0.018554 seconds
+  Import took 0.021165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx
+  artifactKey: Guid(dbf4e442d523220489ca9531ab20161f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx using Guid(dbf4e442d523220489ca9531ab20161f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16fd14d7b43fcca4873e19c7b24c43e') in 0.019228 seconds
+  Import took 0.021654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx
+  artifactKey: Guid(21b5bb1519e484148aa30042c43904c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx using Guid(21b5bb1519e484148aa30042c43904c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7076ec431da90b58d75eb32353087b') in 0.016747 seconds
+  Import took 0.019027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/SenseSomethingStart_Slime_Anim.fbx
+  artifactKey: Guid(81c4fe76ddb8c314087afd9c59b831b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/SenseSomethingStart_Slime_Anim.fbx using Guid(81c4fe76ddb8c314087afd9c59b831b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89de3811e75fe3613a8c8cddb13b784b') in 0.033522 seconds
+  Import took 0.035819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/SenseSomethingRoutine_Slime_Anim.fbx
+  artifactKey: Guid(7598b72533d77114287ffbe12e3f9178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/SenseSomethingRoutine_Slime_Anim.fbx using Guid(7598b72533d77114287ffbe12e3f9178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f45065d0a8a197c13455e4d0b60132a') in 0.023226 seconds
+  Import took 0.026067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/GetHit_Slime_Anim.fbx
+  artifactKey: Guid(a4dd2805a4cbc5b428b746ff8cf375c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/GetHit_Slime_Anim.fbx using Guid(a4dd2805a4cbc5b428b746ff8cf375c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9702378bdf72233b62b941f2d8e6b32') in 0.020099 seconds
+  Import took 0.022270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/WalkRight_Slime_Anim.fbx
+  artifactKey: Guid(e701e62680e5836438f67a3da2bdc71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/WalkRight_Slime_Anim.fbx using Guid(e701e62680e5836438f67a3da2bdc71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833f1512e63b402d9ae6defb239b0bd9') in 0.028971 seconds
+  Import took 0.031305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/IdleBattle_Slime_Anim.fbx
+  artifactKey: Guid(2bfd6fdaf6b23874ca93fca2e578b931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/IdleBattle_Slime_Anim.fbx using Guid(2bfd6fdaf6b23874ca93fca2e578b931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38c74253d3c7d7daf6a0ff54cb4df5a') in 0.031348 seconds
+  Import took 0.033400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx
+  artifactKey: Guid(8254c95c1caa1da4cb1d22972c413dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx using Guid(8254c95c1caa1da4cb1d22972c413dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d6e20ad906512890c0b6084b7e2cd8') in 0.025621 seconds
+  Import took 0.027958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx
+  artifactKey: Guid(34094b5c4dd5cd9438870be57749bf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx using Guid(34094b5c4dd5cd9438870be57749bf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc6c524644ffbabc2ff89d6580df56c7') in 0.029631 seconds
+  Import took 0.031904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx
+  artifactKey: Guid(8254c95c1caa1da4cb1d22972c413dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx using Guid(8254c95c1caa1da4cb1d22972c413dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d6e20ad906512890c0b6084b7e2cd8') in 0.017777 seconds
+  Import took 0.019974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx
+  artifactKey: Guid(4633f9c0f50bbb548a176fd4c0f5a0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx using Guid(4633f9c0f50bbb548a176fd4c0f5a0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe060c7e4f6e70bcb06daa58301a566') in 0.024498 seconds
+  Import took 0.026628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Victory_Slime_Anim.fbx
+  artifactKey: Guid(6f262ec4363c1e54baf17c27c26b0bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Victory_Slime_Anim.fbx using Guid(6f262ec4363c1e54baf17c27c26b0bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69797fc8bbf92c6d561706f22c571d7b') in 0.024681 seconds
+  Import took 0.033100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Dizzy_Slime_Anim.fbx
+  artifactKey: Guid(08a0ee10a8d761e41bf8bc9b832040d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Dizzy_Slime_Anim.fbx using Guid(08a0ee10a8d761e41bf8bc9b832040d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9012beed6b556bfc4187e9e4c07149') in 0.033300 seconds
+  Import took 0.035368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx
+  artifactKey: Guid(f76b9b823f2fc9a469d0c2c780514380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster Duo PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx using Guid(f76b9b823f2fc9a469d0c2c780514380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ffd295dcc24ba19c69fc5db332b3df') in 0.019478 seconds
+  Import took 0.021599 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001670 seconds.
+Registered in 0.001521 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.666 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.4 MB.
-System memory in use after: 67.5 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1857.
-Total: 1.618500 ms (FindLiveObjects: 0.217200 ms CreateObjectMapping: 0.035700 ms MarkObjects: 1.350300 ms  DeleteObjects: 0.014300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.039931 seconds.
-  path: Assets/Scripts/Monster.cs
-  artifactKey: Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Monster.cs using Guid(d8558e1fa223ae545b14788055d64f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3703a43840baf74e71013487fd03bd48') in 0.004175 seconds
-  Import took 0.006321 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001528 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.646 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.4 MB.
-System memory in use after: 67.5 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1860.
-Total: 1.562900 ms (FindLiveObjects: 0.163300 ms CreateObjectMapping: 0.030900 ms MarkObjects: 1.339000 ms  DeleteObjects: 0.027400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 87.382539 seconds.
-  path: Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller
-  artifactKey: Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88009a077fcb1c65795515b9970fa482') in 0.012131 seconds
-  Import took 0.014375 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001793 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.647 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1863.
-Total: 1.537000 ms (FindLiveObjects: 0.181300 ms CreateObjectMapping: 0.031800 ms MarkObjects: 1.307800 ms  DeleteObjects: 0.015200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001476 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.656 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1866.
-Total: 1.618300 ms (FindLiveObjects: 0.195300 ms CreateObjectMapping: 0.036900 ms MarkObjects: 1.370800 ms  DeleteObjects: 0.014400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 62.012540 seconds.
-  path: Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller
-  artifactKey: Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bdd77a0c247749d3b514fe2528d778') in 0.013598 seconds
-  Import took 0.016125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller
-  artifactKey: Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RPG Monster Duo PBR Polyart/Animators/Slime.controller using Guid(fb53b4d3a4f06844c90da7297e9082de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bdd77a0c247749d3b514fe2528d778') in 0.004464 seconds
-  Import took 0.006477 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001537 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.656 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1869.
-Total: 1.718000 ms (FindLiveObjects: 0.162500 ms CreateObjectMapping: 0.036300 ms MarkObjects: 1.497300 ms  DeleteObjects: 0.020800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001703 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.655 seconds
+- Completed reload, in  0.664 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
+Unloading 1415 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.1 MB.
+System memory in use after: 71.2 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1872.
-Total: 1.669000 ms (FindLiveObjects: 0.164600 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.448000 ms  DeleteObjects: 0.020100 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1871.
+Total: 1.532000 ms (FindLiveObjects: 0.166400 ms CreateObjectMapping: 0.036100 ms MarkObjects: 1.309300 ms  DeleteObjects: 0.019000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001442 seconds.
+Registered in 0.001830 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.656 seconds
+- Completed reload, in  0.678 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1415 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.1 MB.
+System memory in use after: 71.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1874.
+Total: 1.621500 ms (FindLiveObjects: 0.218100 ms CreateObjectMapping: 0.032300 ms MarkObjects: 1.353200 ms  DeleteObjects: 0.016600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001618 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1415 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.1 MB.
+System memory in use after: 71.2 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1875.
-Total: 1.740600 ms (FindLiveObjects: 0.214200 ms CreateObjectMapping: 0.034700 ms MarkObjects: 1.467500 ms  DeleteObjects: 0.023300 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1877.
+Total: 1.965900 ms (FindLiveObjects: 0.318200 ms CreateObjectMapping: 0.044500 ms MarkObjects: 1.576500 ms  DeleteObjects: 0.025000 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
