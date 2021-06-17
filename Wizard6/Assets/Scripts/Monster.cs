@@ -24,6 +24,10 @@ public class Monster : MonoBehaviour
     public bool playerInSightRange, playerInAttackRange;
 
     private bool Dead = false;
+    private bool SetRandom = false;
+    private int probability = 30;   //포션 드랍 확률
+    private int randomValue;
+    
 
     private void Awake()
     {
@@ -58,13 +62,21 @@ public class Monster : MonoBehaviour
         if (health <= 0)
         {
             nav.SetDestination(transform.position);
+            if (!SetRandom)
+            {
+                randomValue = Random.Range(1, 100);
+                SetRandom = true;
+            }
             if (!Dead)
             {
-                Instantiate (potion, gameObject.transform.position, Quaternion.identity);
-                Dead = true;
+                if (randomValue <= probability)
+                {
+                    Instantiate(potion, gameObject.transform.position, Quaternion.identity);
+                    Dead = true;
+                }
             }
             Destroy(gameObject, 3);
-
+            
             anim.SetTrigger("doDie");
         }
     }
@@ -121,7 +133,6 @@ public class Monster : MonoBehaviour
         {
             health -= 50;
             anim.SetBool("isGetHit", true);
-            Debug.Log("몬스터 HP: " + health);
         }
     }
 
