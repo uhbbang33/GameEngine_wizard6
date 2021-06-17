@@ -31,11 +31,18 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Door" t="Include">
+            <e p="Door.cs" t="Include" />
+            <e p="InstantiateMonster.cs" t="Include" />
+            <e p="OnlyOpenDoor.cs" t="Include" />
+            <e p="OnlyUpDoor.cs" t="Include" />
+          </e>
           <e p="Hand.cs" t="Include" />
           <e p="Monster.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="Shoot.cs" t="Include" />
+          <e p="TitleScene.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

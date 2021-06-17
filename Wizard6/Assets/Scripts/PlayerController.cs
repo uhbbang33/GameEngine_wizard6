@@ -3,20 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public Camera cam;
     public Rigidbody rb;
+    public Slider HealthBar;
+    public Text PotionText;
 
     public float speed;
-    public int health;
-    public int maxHealth;
-
-    public int potion;
-    public int maxPotion;
-
     public float mouseSensitivity = 1;
+    public int maxPotion = 5;
+    
+    private int Playerhealth = 100;
+    private int maxHealth = 100;
+    private int potionCnt = 0;
 
     private void Start()
     {   
@@ -41,30 +43,35 @@ public class PlayerController : MonoBehaviour
         rb.velocity = (transform.forward * (keyboardY * speed)) + 
                       (transform.right * (keyboardX * speed));
 
-        if (potion > 0)
+        //포션 사용
+        if (potionCnt > 0)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                --potion;
-                health += 50;
-                Debug.Log("플레이어 HP: " + health);
+                --potionCnt;
+                Playerhealth += 10;
             }
         }
+        
+        //UI출력
+        HealthBar.value = Playerhealth;
+        PotionText.text = "" + potionCnt;
     }
 
+    //포션 획득
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Potion")
         {
-            if (potion < maxPotion)
+            if (potionCnt < maxPotion)
             {
-                ++potion;
+                ++potionCnt;
                 Destroy(other.gameObject);
-                Debug.Log("포션 개수" + potion);
             }
         }
     }
 
+    //몬스터 충돌
     int num = 0;
     void OnTriggerStay(Collider other)
     {
@@ -73,8 +80,7 @@ public class PlayerController : MonoBehaviour
         {
             if (num % 50 == 1)
             {
-                health -= 50;
-                Debug.Log("플레이어 HP: "+health);
+                Playerhealth -= 5;
             }
         }
     }
