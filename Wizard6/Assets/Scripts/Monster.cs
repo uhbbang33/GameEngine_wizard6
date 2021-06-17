@@ -22,6 +22,7 @@ public class Monster : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
@@ -52,7 +53,7 @@ public class Monster : MonoBehaviour
             nav.SetDestination(transform.position);
         }
 
-        if (health == 0)
+        if (health <= 0)
         {
             nav.SetDestination(transform.position);
             Destroy(gameObject, 5);
