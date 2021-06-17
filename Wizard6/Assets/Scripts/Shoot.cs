@@ -11,6 +11,8 @@ public class Shoot : MonoBehaviour
     public float projectileSpeed = 10;
     public float coolTime = 4;
 
+    public AudioClip clip;
+
     private Vector3 destination;
     private float timeToFire;
 
@@ -20,6 +22,7 @@ public class Shoot : MonoBehaviour
         {
             timeToFire = Time.time + 1 / coolTime;
             ShootProjectile();
+            SoundManager.instance.SFXPlay("fire", clip);
         }
     }
 

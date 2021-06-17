@@ -20,12 +20,6 @@ public class PlayerController : MonoBehaviour
     private int maxHealth = 100;
     private int potionCnt = 0;
 
-    private void Start()
-    {   
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
     private void Update()
     {
         //camera rotation

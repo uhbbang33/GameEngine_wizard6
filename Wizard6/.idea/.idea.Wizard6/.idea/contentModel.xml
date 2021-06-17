@@ -42,6 +42,7 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="Shoot.cs" t="Include" />
+          <e p="SoundManager.cs" t="Include" />
           <e p="TitleScene.cs" t="Include" />
         </e>
       </e>
