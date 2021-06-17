@@ -56,7 +56,7 @@ public class Monster : MonoBehaviour
         if (health <= 0)
         {
             nav.SetDestination(transform.position);
-            Destroy(gameObject, 5);
+            Destroy(gameObject, 3);
 
             anim.SetTrigger("doDie");
         }
