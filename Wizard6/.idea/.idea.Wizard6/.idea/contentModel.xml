@@ -31,6 +31,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Boss.cs" t="Include" />
           <e p="Door" t="Include">
             <e p="Door.cs" t="Include" />
             <e p="InstantiateMonster.cs" t="Include" />
@@ -42,6 +43,7 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="Shoot.cs" t="Include" />
+          <e p="SoundManager.cs" t="Include" />
           <e p="TitleScene.cs" t="Include" />
         </e>
       </e>

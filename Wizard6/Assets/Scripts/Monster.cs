@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Monster : MonoBehaviour
 {
+    public GameObject potion;
     public Transform player;
 
     Rigidbody rigid;
@@ -22,6 +23,7 @@ public class Monster : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    private bool Dead = false;
 
     private void Awake()
     {
@@ -56,6 +58,11 @@ public class Monster : MonoBehaviour
         if (health <= 0)
         {
             nav.SetDestination(transform.position);
+            if (!Dead)
+            {
+                Instantiate (potion, gameObject.transform.position, Quaternion.identity);
+                Dead = true;
+            }
             Destroy(gameObject, 3);
 
             anim.SetTrigger("doDie");

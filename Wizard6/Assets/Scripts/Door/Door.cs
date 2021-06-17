@@ -15,7 +15,8 @@ public class Door : MonoBehaviour
     [SerializeField] private InstantiateMonster createMonster;
 
     public bool monsterInit;
-
+    public AudioClip clip;
+    
     private void Start()
     {
         monsterInit = false;
@@ -27,6 +28,7 @@ public class Door : MonoBehaviour
         {
             if (openTrigger)
             {
+                SoundManager.instance.SFXPlay("door", clip);
                 myDoor.Play("DoorOpen", 0, 0.0f);
                 gameObject.SetActive(false);
                 
