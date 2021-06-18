@@ -91,7 +91,7 @@ public class Monster : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject, 5);
+            Destroy(gameObject, 3);
 
         }
         if (Over)

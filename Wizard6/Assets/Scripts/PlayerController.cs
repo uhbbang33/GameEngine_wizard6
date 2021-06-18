@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public int maxPotion = 5;
     
     private int Playerhealth = 100;
-    private int maxHealth = 100;
+    //private int maxHealth = 100;
     private int potionCnt = 0;
 
     private void Update()
