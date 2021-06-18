@@ -62,6 +62,9 @@ public class Monster : MonoBehaviour
         if (health <= 0)
         {
             nav.SetDestination(transform.position);
+
+            anim.SetTrigger("doDie");
+
             if (!SetRandom)
             {
                 randomValue = Random.Range(1, 100);
@@ -75,9 +78,9 @@ public class Monster : MonoBehaviour
                     Dead = true;
                 }
             }
-            Destroy(gameObject, 3);
-            
-            anim.SetTrigger("doDie");
+
+            Destroy(gameObject, 2);
+
         }
     }
 
