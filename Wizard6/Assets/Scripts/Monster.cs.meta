@@ -3,7 +3,13 @@ guid: d8558e1fa223ae545b14788055d64f32
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - potion: {fileID: 1167819529116892166, guid: fe089566a18aa8843948cc78593baf5d, type: 3}
+  - player: {instanceID: 0}
+  - character: {instanceID: 0}
+  - gameUI: {instanceID: 0}
+  - clearUI: {instanceID: 0}
+  - nav: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

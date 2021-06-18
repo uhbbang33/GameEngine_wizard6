@@ -7,6 +7,10 @@ public class Monster : MonoBehaviour
 {
     public GameObject potion;
     public Transform player;
+    
+    public GameObject character;
+    public GameObject gameUI;
+    public GameObject clearUI;
 
     Rigidbody rigid;
     public NavMeshAgent nav;
@@ -28,6 +32,9 @@ public class Monster : MonoBehaviour
     private int probability = 30;   //포션 드랍 확률
     private int randomValue;
     
+    private float timer;
+    private float OverTime = 30f;
+    private bool Over = false;
 
     private void Awake()
     {
@@ -65,6 +72,11 @@ public class Monster : MonoBehaviour
 
             anim.SetTrigger("doDie");
 
+            if (gameObject.name == "DogPolyart")
+            {
+                Over = true;
+            }
+
             if (!SetRandom)
             {
                 randomValue = Random.Range(1, 100);
@@ -79,8 +91,20 @@ public class Monster : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject, 2);
+            Destroy(gameObject, 5);
 
+        }
+        if (Over)
+        {
+            timer += 0.1f;
+        }
+
+        if (timer >= OverTime)
+        {
+            character.SetActive(false);
+            gameUI.SetActive(false);
+            clearUI.SetActive(true);
+            SoundManager.instance.bgSound.Stop();
         }
     }
 

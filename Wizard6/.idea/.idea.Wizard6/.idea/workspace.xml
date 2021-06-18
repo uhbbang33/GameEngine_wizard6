@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="aa534546-03e0-4e35-8cc6-d9ad7cbcc53a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Wizard6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wizard6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TitleScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TitleScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/gameclear.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/gameclear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/gameclear.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/gameclear.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/gameover.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/gameover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/gameover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/gameover.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +30,14 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Shoot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TitleScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Door/Door.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Door/OnlyOpenDoor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Door/OnlyUpDoor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Potion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Monster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TitleScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sAYAHrOSG3NiHqRe9iAMpXstmy" />
@@ -83,6 +88,8 @@
       <workItem from="1623953358879" duration="1439000" />
       <workItem from="1623966404629" duration="2696000" />
       <workItem from="1623969465449" duration="1112000" />
+      <workItem from="1623977197650" duration="949000" />
+      <workItem from="1623979317916" duration="2490000" />
     </task>
     <servers />
   </component>

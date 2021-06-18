@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
     public Slider HealthBar;
     public Text PotionText;
 
+    public GameObject character;
+    public GameObject gameUI;
+    public GameObject overUI;
+
     public float speed;
     public float mouseSensitivity = 1;
     public int maxPotion = 5;
@@ -46,7 +50,15 @@ public class PlayerController : MonoBehaviour
                 Playerhealth += 10;
             }
         }
-        
+
+        if (Playerhealth <= 0)
+        {
+            character.SetActive(false);
+            gameUI.SetActive(false);
+            overUI.SetActive(true);
+            SoundManager.instance.bgSound.Stop();
+        }
+
         //UI출력
         HealthBar.value = Playerhealth;
         PotionText.text = "" + potionCnt;
